@@ -1,0 +1,18 @@
+{
+  "$class": "org.example.mynetwork.Package",
+  "packageNo": "0001",
+  "category": "null",
+  "description": "null",
+  "status": "null",
+  "weight": 0,
+  "sendTime": "0000-01-01T00:00:00.000Z",
+  "sendLongitude": 0,
+  "sendLatitude": 0,
+  "receiveTime": "0000-01-01T00:00:00.000Z",
+  "receiveWeight": 0,
+  "receiveLongitude": 0,
+  "receiveLatitude": 0,
+  "fee": 0,
+  "sender": "resource:org.example.mynetwork.Trader#0001",
+  "recipient": "resource:org.example.mynetwork.Trader#0002"
+}

@@ -1,0 +1,8 @@
+{
+  "$class": "org.example.mynetwork.Receive",
+  "package": "resource:org.example.mynetwork.Package#0001",
+  "sender": "resource:org.example.mynetwork.Trader#0001",
+  "recipient": "resource:org.example.mynetwork.Trader#0002",
+  "receiveTime": "2021-04-01T16:00:00.000Z",
+  "receiveWeight": 10
+}

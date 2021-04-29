@@ -1,0 +1,10 @@
+{
+  "$class": "org.example.mynetwork.Trader",
+  "traderId": "0002",
+  "traderName": "Wei",
+  "telNumber": "59872233",
+  "email": "wei@gmail.com",
+  "city": "Hong Kong",
+  "walletBalance": 0,
+  "operatorName": "RCE Management Staff"
+}

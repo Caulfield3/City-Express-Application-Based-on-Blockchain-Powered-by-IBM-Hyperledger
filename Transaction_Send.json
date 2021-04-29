@@ -1,0 +1,14 @@
+{
+  "$class": "org.example.mynetwork.Send",
+  "package": "resource:org.example.mynetwork.Package#0001",
+  "sender": "resource:org.example.mynetwork.Trader#0001",
+  "recipient": "resource:org.example.mynetwork.Trader#0002",
+  "category": "Fruit",
+  "description": "3 apples",
+  "weight": 10,
+  "sendTime": "2021-04-01T08:00:00.000Z",
+  "sendLongitude": 22,
+  "sendLatitude": 113,
+  "receiveLongitude": 23,
+  "receiveLatitude": 114
+}

@@ -1,0 +1,57 @@
+/* RCE on Composer */
+namespace org.example.mynetwork
+asset Package identified by packageNo {
+    o String packageNo
+    o String category
+    o String description
+    o String status default = "null"
+    o Double weight default = 0.0
+    o DateTime sendTime default = "2020-12-31 23:59:59"
+    o Double sendLongitude default = 0.0
+    o Double sendLatitude default = 0.0
+    o DateTime receiveTime default = "2021-01-01 00:00:00"
+    o Double receiveWeight default = 0.0
+    o Double receiveLongitude default = 0.1
+    o Double receiveLatitude default = 0.1
+    o Double fee
+    --> Trader sender
+    --> Trader recipient
+}
+  
+participant Trader identified by traderId {
+    o String traderId
+    o String traderName
+    o String telNumber
+    o String email
+    o String city
+    o Double walletBalance default = 0.0
+    o String operatorName
+}
+  
+transaction Charge {
+    o Double amount
+    --> Trader charger
+}
+  
+transaction Send {
+    --> Package package
+    --> Trader sender
+    --> Trader recipient
+    o String category
+    o String description
+    o Double weight default = 0.0
+    o DateTime sendTime default = "2020-12-31 23:59:59"
+    o Double sendLongitude default = 0.0
+    o Double sendLatitude default = 0.0
+    o Double receiveLongitude default = 0.0
+    o Double receiveLatitude default = 0.0
+}
+  
+transaction Receive {
+    --> Package package
+    --> Trader sender
+    --> Trader recipient
+    o DateTime receiveTime default = "2021-01-01 00:00:00"
+    o Double receiveWeight default = 0.0
+}
+

@@ -1,0 +1,5 @@
+{
+  "$class": "org.example.mynetwork.Charge",
+  "amount": 100,
+  "charger": "resource:org.example.mynetwork.Trader#0001"
+}
